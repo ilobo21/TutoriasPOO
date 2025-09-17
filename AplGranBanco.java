@@ -25,11 +25,6 @@ public class AplGranBanco
         cta1.cambiarPin(6789); //"Pin establecido" : "Error"
         System.out.println(cta2.cambiarPin(6789, 1234) ? "Pin establecido" : "Error"); //"Pin establecido" : "Error"
         
-        System.out.println(cta1.getNumeroCuenta());
-        System.out.println(cta2.getNumeroCuenta());
-        System.out.println(cta2.getNumeroCuenta() == cta1.getNumeroCuenta() ? "Son Iguales" : "No son Iguales"); 
-        
-        
         
         
     }

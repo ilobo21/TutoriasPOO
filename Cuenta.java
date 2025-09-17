@@ -99,6 +99,7 @@ public class Cuenta
     
     public void cambiarPin(int pinNuevo){
         pin = pinNuevo;
+        alertPinChange();
     }
     
     public ArrayList<ArrayList<String>> getBitacora(){
@@ -116,6 +117,13 @@ public class Cuenta
     public int getNumeroCuenta(){
         return numeroCuenta;
     }
+    
+    private void alertPinChange(){
+        String mensaje;
+        mensaje = "Hola\nTu pin ha cambiado";
+        EmailSender.sendEmail("Tu Pin Ha Cambiado", idDuenho, mensaje);
+    }
+    
     
     
     
